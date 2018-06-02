@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node src/server/app.js",
     "prestart": "webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config=jest.json"
   },
   "author": "",
   "license": "ISC",
@@ -19,15 +19,18 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.11",
+    "jest": "^23.1.0",
     "node-sass": "^4.9.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-test-renderer": "^16.4.0",
     "sass-loader": "^7.0.2",
     "style-loader": "^0.21.0"
   }
